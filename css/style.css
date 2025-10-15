@@ -1,0 +1,563 @@
+@charset "utf-8";
+
+/*ポートフォリオ　original css
+2023/10 vr3
+===============================*/
+
+/*全体の設定/////////*/
+
+body {
+    font-family: "Roboto Condensed","Zen Kaku Gothic Antique","メイリオ";
+    background-color: #B3AEAE;
+    font-size: 16px;
+}
+
+/*各セクションタイトル文字の設定/////////*/
+.komoji {
+    text-transform: lowercase;
+}
+
+/*headerの設定//////////*/
+header {
+    background-image: url(../images/top/eyecatchPC.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    margin-bottom: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title img {
+    max-width: 60vw;
+    height: auto;
+    margin-top: 15%;
+}
+
+
+
+
+/*グローバルナビゲーションの設定//////////*/
+header nav {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    z-index: 100;
+}
+
+nav ul {
+    width: 100%;
+}
+
+.navlist {
+    font-family: "Roboto Condensed","Arial";
+    color: #F3F3F1;
+    font-size: 30px;
+    border: 0.9px solid #DFD9D9;
+    width: 150px;
+    height: 25vh;
+    line-height: 25vh;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #AFACBB;
+}
+
+.navlist a {
+    display: block;
+}
+
+.navlist:hover {
+    background-color: rgba(25, 123, 50, 0.3);
+}
+
+.sitetitle img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/*worksセクションの設定//////////*/
+.worksSec {
+    margin-top: 100px;
+    padding-top: 300px;
+    background-image: url(../images/top/heartRed.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 15vw;
+    margin-bottom: 300px;
+}
+
+.worksSec h2 {
+    font-family: "Train One","Arial";
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.worksSec p {
+    text-align: center;
+    color: #F3F3F1;
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 70px;
+}
+
+.worksList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.worksList p img {
+    max-width: 100%;
+    height: auto;
+}
+.worksList p img:hover {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.worklist2 {
+    margin-top: 200px;
+}
+
+.worklist3 {
+    margin-top: 400px;
+}
+
+
+/*skillsセクションの設定//////////*/
+.skillsSec {
+    margin-top: 100px;
+    padding-top: 500px;
+    background-image: url(../images/skillsSec/heartPurple.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 15vw;
+    margin-bottom: 300px;
+}
+
+.skillsSec h2 {
+    font-family: "Train One","Arial";
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.skillsItem {
+    display: grid;
+    grid-template-rows: 25vw 25vw;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-left: 50px;
+}
+
+.skillsItem li {
+    width: 80%;
+    line-height: 1.5;
+}
+
+.skillsItem li img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/*about meセクションの設定//////////*/
+
+.aboutmeSec {
+    margin-top: 100px;
+    padding-top: 500px;
+    background-image: url(../images/aboutmeSec/heartBlue.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 15vw;
+    margin-bottom: 300px;
+}
+
+.aboutmeInnerwrap {
+    background-color: #197B32;
+}
+
+.aboutmeSec h2 {
+    font-family: "Train One","Arial";
+    font-size: 35px;
+    color: #F3F3F1;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.aboutmetext {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profilePic img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutmeTextflex {
+    align-self: flex-start;
+    background-color: rgba(175, 172, 187, 0.7);
+    width: 40vw;
+    margin-left: -25vw;
+    margin-right: 25px;
+    padding-bottom: 20px;
+}
+
+.aboutmeTextflex dl {
+    font-size: 20px;
+    padding: 20px 20px;
+    line-height: 1.5;
+}
+.aboutmeTextflex dl dd {
+    margin-bottom: 10px;
+}
+
+.aboutmeTextflex p {
+    padding: 0 20px 5px 20px;
+    line-height: 1.5;
+}
+.moreprofile {
+    font-size: 25px;
+    width: 200px;
+    background-color: #A717EC;
+    border-radius: 5%;
+    color: #F3F3F1;
+    text-align: center;
+    padding: 20px;
+    margin: 0 50px 50px 0;
+}
+.moreprofileBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -120px;
+    position: relative;
+    z-index: 50;
+}
+.moreprofile:hover {
+    background-color: rgba(223, 217, 217, 0.5);
+    transition: 1s;
+}
+
+
+.strength h3 {
+    font-family: "Train One","Arial";
+    font-size: 35px;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: right;
+    padding-right: 100px;
+    color: #F3F3F1;
+    margin-bottom: 100px;
+}
+
+.tuyomiSub {
+    color: #F3F3F1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tuyomiFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.tuyomiFlex p {
+    line-height: 1.5;
+}
+
+.koujou {
+    width: 30%;
+    text-align: center;
+}
+
+.koujou p img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+.ronri {
+    width: 30%;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.ronri p img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+.juunan {
+    width: 30%;
+    text-align: center;
+}
+
+.juunan p img {
+    max-width: 60%;
+    margin-bottom: 30px;
+}
+
+
+
+/*footerの設定//////////*/
+footer {
+    background-color: #A717EC;
+    padding: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    color: #F3F3F1;
+}
+
+
+
+
+/*jQuery フェードインの設定////////////////////////////////////////////////////*/
+
+/*headerのフェードイン設定/*/
+.jsheader {
+    display: none;
+}
+
+
+/*各セクションのフェードイン設定/*/
+/*フェードイン前/*/
+.jsfade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition-duration: 2s;
+}
+
+/*フェードイン後/*/
+.inview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+
+
+
+
+/*レスポンシブウェブデザイン設定/////////////////////////////////////////////////////////////////*/
+/*PCからMB/////////*/
+
+/*「960px」以下に適用//////////////////////////////////////////////////////////*/
+@media screen and (max-width: 960px) {
+
+    /*headerのレスポンシブ設定(960)//////////*/
+    .navlist {
+        width: 120px;
+    }
+
+    .aboutme {
+        font-size: 25px;
+    }
+
+
+
+
+    /*skillsセクションのレスポンシブ設定(960)//////////*/
+    .skillsItem {
+        row-gap: 230px;
+    }
+
+
+
+    /*aboutmeセクションのレスポンシブ設定(960)//////////*/
+    .aboutmeSec {
+        padding-bottom: 100px;
+    }
+
+    .aboutmeTextflex {
+        font-size: 15px;
+        width: 60vw;
+        margin-top: -150px;
+    }
+
+    .moreprofileBox {
+        margin-top: -70px;
+    }
+    .moreprofile {
+        margin: 0 50px 0 0;
+    }
+
+
+
+}
+
+
+
+/*「640px」以下に適用//////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 640px) {
+
+    /*headerのレスポンシブ設定(640)//////////*/
+    header {
+        background-image: url(../images/top/eyecatchMB.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header nav {
+        left: 0;
+    }
+
+    .navflex {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .navlist {
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+    }
+
+    .aboutme {
+        font-size: 15px;
+    }
+
+    h1 {
+        margin: 0 20px;
+    }
+
+    .title img {
+        max-width: 100%;
+        vertical-align: middle;
+        margin-top: 50vh;
+    }
+
+    /*worksSecのレスポンシブ設定(640)//////////*/
+    .worksSec {
+        margin-left: 0;
+    }
+    .worksSec p {
+        font-size: 17px;
+    }
+
+    .worksList {
+        display: block;
+        margin: 50px 30px;
+    }
+
+    .worklist2 {
+        margin-top: 0;
+    }
+
+    .worklist3 {
+        margin-top: 0;
+    }
+
+    /*skillsSecのレスポンシブ設定(640)//////////*/
+    .skillsSec {
+        margin-left: 0;
+    }
+
+    .skillsItem {
+        display: block;
+        margin: 50px 50px;
+    }
+
+    .skillsItem li {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .skillsItem li img {
+        max-width: 100px;
+    }
+
+    /*about meSecのレスポンシブ設定(640)//////////*/
+    .aboutmeSec {
+        margin-left: 0;
+    }
+    .aboutmeSec h2 {
+        text-align: center;
+        padding-left: 0;
+
+    }
+    .aboutmeInnerwrap {
+        padding-bottom: 250px;
+        margin-bottom: 100px;
+    }
+    .aboutmeInnerwrap {
+        background-image: url(../images/aboutmeSec/profileMB.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
+    .aboutmetext {
+        display: block;
+    }
+    .profilePic {
+        display: none;
+    }
+    .aboutmeTextflex {
+        margin: 50px 20px;
+        width: auto;
+    }
+
+    .moreprofileBox {
+        justify-content: center;
+        margin-top: auto;
+    }
+    .moreprofile {
+        margin: auto;
+        padding: 10px;
+        font-size: 20px;
+        width: 150px;
+    }
+
+
+    .strength h3 {
+        text-align: center;
+        padding: 0;
+    }
+    .subtitle {
+        text-align: center;
+        padding-right: 0;
+    }
+    .tuyomiFlex {
+        display: block;
+        text-align: center;
+    }
+    .koujou {
+        width: 50%;
+        margin: 50px auto;
+    }
+    .ronri {
+        width: 50%;
+        margin: 50px auto;
+    }
+    .juunan {
+        width: 50%;
+        margin: 50px auto;
+    }
+
+
+
+
+
+
+}
