@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+/*ポートフォリオ　original css
+制作２　shout！　LPページ用css
+2023/09 vr1
+===============================*/
+
+/*全体の設定//////////*/
+body {
+    background-color: #FCFC81;
+    font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "HGS創英角ｺﾞｼｯｸUB", "Britannic Bold", "Arial";
+    font-size: 16px;
+}
+
+.TopSec {
+    margin-bottom: 100px;
+}
+
+.TopMB {
+    display: none;
+}
+
+.topImage img {
+    width: 100%;
+    height: auto;
+}
+
+.kumohaikei {
+    background: url(../images/HaikeiKumo.jpg) fixed;
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 150px;
+}
+
+.koukaibi {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.koukaibi img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.cast {
+    text-align: center;
+}
+
+.cast dt img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.cast dd {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/*introductionセクションの設定//////*/
+.introSec {
+    text-align: center;
+    background-image: url(../images/sankakuBlue.png), url(../images/sankakuWhite.png), url(../images/sankakuBlack.png), url(../images/sankakuPink.png), url(../images/sankakuBlue.png), url(../images/sankakuWhite.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, right top, right center, left center, left bottom, right bottom;
+    margin-bottom: 200px;
+}
+
+.introSec h2 {
+    margin-bottom: 15px;
+}
+
+.introSec h2 img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+.introSec p img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+.introSectext {
+    line-height: 5;
+    font-size: 20px;
+}
+
+
+/*campaignセクションの設定//////*/
+.campaignSec {
+    margin-bottom: 50px;
+}
+
+.campaignSec h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.campaignSec h2 img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.campaigntext {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.campaigntext1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hashtag {
+    color: #ff00ff;
+}
+
+.campaigntext2 {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.TshitsGroup {
+    background-color: #00ffff;
+    width: 100vw;
+}
+
+.TshitsGroupText {
+    font-size: 25px;
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 50px;
+    border-bottom: 2px solid #ff00ff;
+}
+
+.Tshits {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+
+.Tshits p img {
+    width: 100%;
+    height: auto;
+}
+
+.bagGroup {
+    background-color: #ff00ff;
+    width: 100vw;
+    position: relative;
+    left: -32%;
+}
+
+.bagGroupText {
+    text-align: right;
+    font-size: 25px;
+    padding-top: 40px;
+    margin-right: 50px;
+    border-bottom: 2px solid #00ffff;
+}
+
+.bag {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+
+.bag p img {
+    width: 100%;
+    height: auto;
+}
+
+.periodDay {
+    font-size: 30px;
+    color: #fff;
+    line-height: 2;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.yokokuHP {
+    padding: 0 70px 0 70px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.yokokuHP p img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*footerの設定//////*/
+footer {
+    background-color: black;
+    text-align: center;
+    line-height: 2;
+}
+
+footer p {
+    color: #fff;
+}
+
+
+
+
+
+
+/*レスポンシブ設定（600PX以下）//////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 600px) {
+
+
+    /*TopSecセクションのレスポンシブ設定//////*/
+    .TopSec {
+        margin-bottom: 0;
+    }
+
+    .TopPC {
+        display: none;
+    }
+
+    .TopMB {
+        display: block;
+    }
+
+    /*h2のレスポンシブ設定//////*/
+    h2 {
+        padding: 0 10px;
+    }
+
+
+    /*introSecセクションのレスポンシブ設定//////*/
+    .introSec {
+        background-image: url(../images/LPHaikeiMB.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        padding: 150px 0;
+        margin-bottom: 0;
+    }
+
+    .introSectext {
+        text-align: left;
+        font-size: 15px;
+        line-height: 3;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+
+    /*campaignSecセクションのレスポンシブ設定//////*/
+
+    .campaigntext {
+        width: 80%;
+        height: auto;
+    }
+
+    .campaigntext1 {
+        font-size: 18px;
+    }
+
+    .campaigntext2 {
+        font-size: 19px;
+    }
+
+    .TshitsGroup {
+        width: 100%;
+    }
+
+    .TshitsGroupText {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .Tshits {
+        display: block;
+    }
+
+    .bagGroup {
+        position: static;
+        width: 100%;
+    }
+
+    .bagGroupText {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .bag {
+        display: block;
+    }
+
+
+    .periodDay {
+        font-size: 17px;
+    }
+
+    .yokokuHP {
+        display: block;
+        margin-top: 80px;
+    }
+
+    .yokokuHP p {
+        margin-bottom: 50px;
+    }
+
+    .yokokuHP p img {
+        text-align: center;
+        min-width: 200px;
+    }
+
+
+
+
+
+
+
+}
