@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <!--reset css-->
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <!--style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>emicafeHP</title>
+</head>
+
+<body>
+
+    <header class="jsfadein">
+        <div class="topbar">
+            <h1><img src="HPimages/emicafeTitle.png" alt="emicafeタイトル"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#conseptscroll">consept</a></li>
+                    <li><a href="#galleryscroll">gallery</a></li>
+                    <li><a href="#accessscroll">access</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="topSec jsfadein">
+            <div class="topMidashi">
+                <h2><img src="HPimages/midashiMoji.png" alt="flowerとcafe"></h2>
+                <p class="coffeePic"><img src="HPimages/toppicture.png" alt="コーヒーの画像"></p>
+            </div>
+            <div class="topSecText">
+                <p class="topSectext1">
+                    flower × cafe　という<br>
+                    新感覚カフェがオープンしました。
+                </p>
+                <p class="topSectext2">
+                    お花を見ながらコーヒーを楽しむ、<br>
+                    お花を買うついでにちょっと休憩・・など
+                </p>
+                <p class="topSectext3">お花をカフェとともにお楽しみいただけます。</p>
+            </div>
+        </section>
+
+        <section class="conseptSec" id="conseptscroll">
+            <h2>consept</h2>
+            <p class="conseptSectext1">
+                "お店のお花を見て笑顔になり、<br>
+                お店を出るときは笑みを咲かせている”
+            </p>
+            <p class="conseptSectext1">
+                お店に入ったときも、出るときも<br>
+                ずっと笑顔でいられるお店を目指しています。
+            </p>
+
+            <p class="conseptSectext2">
+                キャッチコピーは<br>店名「e m i c a f é 」の由来でもある、<br>
+                【　お花で笑み( e m i ) を咲かせる( 咲＝emi)　】
+            </p>
+        </section>
+
+        <section class="gallerySec" id="galleryscroll">
+            <h2>gallery</h2>
+
+            <div class="gallerySecPic1 jsfadeinLeft">
+                <p><img src="HPimages/garelly1.png" alt="店内写真１"></p>
+                <div class="galleryText1">
+                    <h3>こだわりのオリジナルコーヒー</h3>
+                    <p>お花に囲まれてゆったりとしたカフェタイム</p>
+                </div>
+            </div>
+
+            <div class="gallerySecPic2 jsfadeinRight">
+                <p><img src="HPimages/garelly2.jpg" alt="店内写真２"></p>
+                <div class="galleryText2">
+                    <h3>店内はたくさんのお花でいっぱい</h3>
+                    <p>もちろんお花の購入だけでも大歓迎です</p>
+                </div>
+            </div>
+
+            <div class="gallerySecPic3 jsfadeinLeft">
+                <p><img src="HPimages/garelly3.jpg" alt="店内写真３"></p>
+                <div class="galleryText3">
+                    <h3>自慢の可愛い手作りケーキ</h3>
+                    <p>フラワーケーキは見た目も可愛く大好評いただいてます</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="accessSec" id="accessscroll">
+            <h2>access</h2>
+            <ul>
+                <li>〒163-〇〇〇</li>
+                <li>東京都新宿区〇〇〇〇</li>
+                <li>〇〇-〇〇〇〇-〇〇〇〇</li>
+                <li>9:00～21:00（20:00 lust oder）</li>
+                <li>instaglum　@〇〇〇〇〇〇〇〇</li>
+            </ul>
+            <p class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7477988419073!2d139.7428579753207!3d35.65858483121852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1693060395294!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" alt="地図"></iframe>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerText">
+            <p><img src="HPimages/emicafeFlowerOnly.png" alt="エミカフェロゴ"></p>
+            <p>©emicafe</p>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jquery.inview.min.jsプラグイン -->
+    <script type="text/javascript" src="css/jquery.inview.min.js"></script>
+    <!-- jquerystyle -->
+
+    <script>
+
+        $(window).on("load", function () {
+            $('.jsfadein').fadeIn(1000);
+        });
+
+
+        $(function () {
+            $(".jsfadeinLeft").on("inview", function () {
+                $(this).addClass("inviewleft");
+            });
+        });
+
+
+        $(function () {
+            $(".jsfadeinRight").on("inview", function () {
+                $(this).addClass("inviewRight");
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

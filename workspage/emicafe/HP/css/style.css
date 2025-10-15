@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+/*ポートフォリオ　original css
+複数ページ-emicafeHP css
+2023/08 vr2
+mobile first
+===============================*/
+
+/*全体の設定//////////*/
+
+body {
+    background-color: #DAD8D8;
+    font-size: 15px;
+    font-family: Monotype Corsiva, "a-otf-ryumin-pr6n", serif;
+    color: #080808;
+}
+
+/*jQeryフェードインの設定///////////////////////////////////////////////////////*/
+/*headerのフェードイン設定/*/
+.jsfadein {
+    display: none;
+}
+/*ギャラリーのフェードイン設定（左へ）/*/
+.jsfadeinLeft {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(80px);
+    transition-duration: 2s;
+}
+.inviewleft {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+/*ギャラリーのフェードイン設定（右へ）/*/
+.jsfadeinRight {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-80px);
+transition-duration: 2s;
+}
+.inviewRight {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+
+/*headerの設定//////////*/
+
+/*グローバルナビゲーション////*/
+
+h1 img {
+    width: 60%;
+}
+
+.topbar {
+    background-color: #BBBABA;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+header nav ul {
+    display: flex;
+    margin: 20px 10px 10px 10px;
+
+}
+
+header nav ul li {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+
+/*トップセクションの設定//////////*/
+.topSec {
+    margin-top: 50px;
+}
+
+.topMidashi {
+    display: flex;
+}
+
+.topMidashi h2 {
+    flex-basis: auto;
+}
+
+.topMidashi h2 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 90%;
+    margin-right: 5px;
+}
+
+.topMidashi p {
+    flex-basis: auto;
+}
+
+.topMidashi p img {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.topSecText {
+    margin: 100px 30px 100px 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.topSectext1 {
+    margin-bottom: 30px;
+}
+
+.topSectext2 {
+    margin-bottom: 30px;
+}
+
+.topSectext3 {
+    margin-bottom: 30px;
+}
+
+
+
+/*各セクションタイトル（h2）の設定//////////*/
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*conseptセクションの設定//////////*/
+
+.conseptSec {
+    margin: 0 30px 100px 30px;
+    text-align: center;
+}
+
+.conseptSec h2 {
+    margin-bottom: 100px;
+    border-bottom: 1px solid #080808;
+}
+
+.conseptSectext1 {
+    margin-bottom: 10px;
+}
+
+.conseptSectext2 {
+    margin-top: 70px;
+}
+
+/*galleryセクションの設定//////////*/
+
+.gallerySec {
+    margin: 0 30px 100px 30px;
+    text-align: center;
+}
+
+.gallerySec h2 {
+    margin-bottom: 100px;
+    border-bottom: 1px solid #080808;
+}
+
+.gallerySec p img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.gallerySecPic1 {
+    margin-bottom: 100px;
+}
+
+.gallerySecPic1 h3 {
+    font-size: 19px;
+    width: 280px;
+    margin: 20px auto;
+    border-bottom: 1px solid #080808;
+    ;
+}
+
+.gallerySecPic2 {
+    margin-bottom: 100px;
+}
+
+.gallerySecPic2 h3 {
+    font-size: 19px;
+    width: 290px;
+    margin: 20px auto;
+    border-bottom: 1px solid #080808;
+    ;
+}
+
+.gallerySecPic3 {
+    margin-bottom: 100px;
+}
+
+.gallerySecPic3 h3 {
+    font-size: 19px;
+    width: 250px;
+    margin: 20px auto;
+    border-bottom: 1px solid #080808;
+}
+
+
+/*accessセクションの設定//////////*/
+
+.accessSec {
+    margin: 0 30px 100px 30px;
+    text-align: left;
+}
+
+.accessSec h2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #080808;
+}
+
+.accessSec ul {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    width: 300px;
+    height: 300px;
+}
+
+
+/*footerの設定//////////*/
+footer {
+    background-color: #BBBABA;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText p img {
+    transform: scale(0.5);
+}
+
+
+
+
+
+/*////////////////レスポンシブ設定//////////////////////////////////////////////*/
+
+@media screen and (min-width: 600px) {
+
+    /*ナビゲーションの設定////*/
+
+    header nav ul {
+        margin-right: 100px;
+    }
+
+    header nav ul li {
+        margin-left: 70px;
+        font-size: 30px;
+    }
+
+
+    body {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+
+    /*topSecの設定//////////*/
+    .coffeePic {
+        display: none;
+    }
+
+    .topMidashi {
+        display: block;
+        background-image: url(../HPimages/toppicturePC.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right center;
+        margin-left: 40vw;
+        margin-right: 10vw;
+    }
+
+    .topMidashi h2 img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 50vh;
+        margin-left: -70vw;
+    }
+
+    .topSecText {
+        margin-top: 100px;
+        font-size: 22px;
+    }
+
+
+    /*ギャラリーセクションのレスポンシブ設定//*/
+    .gallerySec {
+        margin-bottom: 200px;
+    }
+
+    .gallerySecPic1 {
+        display: flex;
+        gap: 50px;
+    }
+
+    .gallerySecPic1 div {
+        align-self: center;
+    }
+
+    .gallerySecPic1 h3 {
+        font-size: 22px;
+        width: auto;
+    }
+
+    .gallerySecPic2 {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+
+    .gallerySecPic2 div {
+        align-self: center;
+    }
+
+    .gallerySecPic2 h3 {
+        font-size: 22px;
+        width: auto;
+    }
+
+    .gallerySecPic3 {
+        display: flex;
+        gap: 50px;
+    }
+
+    .gallerySecPic3 div {
+        align-self: center;
+    }
+
+    .gallerySecPic3 h3 {
+        font-size: 22px;
+        width: auto;
+    }
+
+
+    /*アクセスセクションのレスポンシブ設定////*/
+    .accessSec {
+        margin: 0 30px 100px 30px;
+        text-align: center;
+    }
+
+    .accessSec ul {
+        margin-left: 0;
+    }
+    .accessSec ul li {
+        line-height: 1.5;
+    }
+
+    .map iframe {
+        width: 500px;
+        height: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
